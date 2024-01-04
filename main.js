@@ -44,6 +44,11 @@ image (video, 0,0,600,500);
 fill("#FF0000");
 stroke("#00FFFF");
 circle(leftWristx,leftWristy,20)
+var thedancingcat=Number(leftWristy);
+var daFrisko=floor(thedancingcat);
+var volume=daFrisko/500;
+document.getElementById("DaVolume").innerHTML="IShowVolume = " + volume;
+song.setVolume(volume);
 }
 
 function play () {
